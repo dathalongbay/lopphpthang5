@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		#target1 {
+			background-color: green;
+			background-image: url('Bulldog_02.jpg');
+			background-repeat: no-repeat;  
+			background-attachment: scroll;
+			background-position: top left;
+			border-width: 1px;
+			border-color: red;
+			border-style: solid;
+			height: 350px;
+		}
+
+		#target2 {
+			border-width: 1px;
+			border-color: red;
+			border-style: solid;
+			height: 350px;
+
+
+			background: green url('Bulldog_02.jpg') no-repeat scroll top left;
+
+		}
+	</style>
+</head>
+<body>
+
+	<pre>
+		Cách viết tắt của các thuộc tính background
+		1 - background-color ( màu nền )
+		2 - background-image ( ảnh nền )
+		3 - background-attachment ( cố định ảnh nền )
+		4 - background-position ( vị trí của ảnh nền )
+		5 - background-repeat ( lặp ảnh nền)
+
+		Sử dụng 1 thuộc tính duy nhất
+		là background : 
+		background: A B C D E;
+		trong đó 
+		A là giá trị của thuộc tính background-color
+		B là giá trị của thuộc tính background-image
+		C là giá trị của thuộc tính background-repeat
+		D là giá trị của thuộc tính background-attachment
+		E là giá trị của thuộc tính background-position
+		nếu không cần 1 thuộc tính nào đó
+		thì chúng ta chỉ cần bỏ thuộc tính đó đi
+		nhưng chúng ta vẫn tuân thủ thứ tự 
+		A B C D E
+
+	</pre>
+
+	<div id="target1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi mollitia at laboriosam sequi, nam corporis porro odio iure, error quam, quae accusamus quod nesciunt repellat. Excepturi perspiciatis esse laudantium dicta.
+	</div>
+
+	<hr>
+	<hr>
+
+	<div id="target2">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi mollitia at laboriosam sequi, nam corporis porro odio iure, error quam, quae accusamus quod nesciunt repellat. Excepturi perspiciatis esse laudantium dicta.
+	</div>
+	
+</body>
+</html>
