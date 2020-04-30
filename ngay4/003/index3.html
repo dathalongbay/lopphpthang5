@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		.demoA {
+			display: inline;
+			width: 200px;
+			height: 200px;
+			padding: 40px;
+			background: green;
+		}
+
+		.demoB {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+			padding: 40px;
+			background: orange;
+		}
+
+		.demoC {
+			display: block;
+			width: 200px;
+			height: 200px;
+			padding: 40px;
+			background: violet;
+			border: 1px solid red;
+		}
+	</style>
+
+</head>
+<body>
+
+	<pre>
+		Thực hành về display:inline-block
+		inline-block là sự kết hợp của inline và block
+		hay nói cách khác inline-block là con lai của block và inline
+
+		=>
+		kết luận 1 : đặt width và height cho 1 thẻ html có display:inline thì không có tác dụng
+		kết luận 2 : nhóm thẻ display:inline-block nằm trên 1 hàng giống là inline
+
+
+
+		display:inline-block
+
+		lấy đặc điểm nằm trên cùng 1 hàng của nhóm inline và chỉ chiếm độ rộng tương ứng của nhóm inline
+		lấy đặc điểm đặt được độ rộng width và độ cao của display:block
+
+
+		=> sử dụng display:inline-block khi nào ?
+		khi cần các thẻ này nằm trên cùng 1 hàng và có thể đặt được độ rộng width và độ cao height
+
+	</pre>
+
+
+	<span class="demoA">demoA inline</span>
+	<span class="demoA">demoA inline</span>
+	<span class="demoA">demoA inline</span>
+
+
+	<span class="demoB">demoB inline-block</span>
+	<span class="demoB">demoB inline-block</span>
+	<span class="demoB">demoB inline-block</span>
+
+
+	<span class="demoC">demoC block</span>
+	<span class="demoC">demoC block</span>
+	<span class="demoC">demoC block</span>
+	
+</body>
+</html>
