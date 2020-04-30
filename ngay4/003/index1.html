@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		/* style cho nhóm block */
+		div , p , h1 , h2 , section {
+			background-color: green; 
+		}
+
+
+		/* style cho nhóm inline */
+		a , span {
+			background-color: orange;
+		}
+	</style>
+</head>
+<body>
+
+	<pre>
+		Thuộc tính css display
+		1 - sự khác nhau của inline và block
+		2 - display: none
+		3 - display: inline-block
+
+
+		Mặc định các thẻ html chia làm 2 kiểu hiển thị
+		block ( khối ) là các thẻ div , p , section ...
+		inline ( hàng ) là các thẻ img , a , span ...
+
+
+		đặc điểm nhóm block
+		- luôn xuất hiện trên hàng mới kể cả vẫn còn độ rộng cho hàng đó
+		- luôn chiếm tất cả độ rộng sẵn có trên màn hình
+
+		Xem thêm các thẻ thuộc nhóm block
+		https://www.w3schools.com/html/html_blocks.asp
+
+
+		đặc điểm nhóm inline
+		- các thẻ luôn nằm trên hàng và chỉ xuống hàng khi đã hết độ rộng của dòng đó
+		- chỉ chiếm độ rộng tướng ứng với nội dung bên trong thẻ inline
+	</pre>
+
+
+	<div class="demoBlock">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae asperiores expedita ipsum, maiores accusamus hic, assumenda eum dolorem illo nesciunt iure sequi delectus cumque impedit vitae velit eveniet voluptas.
+	</div>
+
+	<div class="demoBlock">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni molestiae asperiores expedita ipsum, maiores accusamus hic, assumenda eum dolorem illo nesciunt iure sequi delectus cumque impedit vitae velit eveniet voluptas.
+	</div>
+
+	<p class="demoBlock">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi cum eveniet explicabo officia totam repellendus voluptates facilis, vel doloribus alias provident, obcaecati! Eaque facilis quis non nostrum, tempore ab odit!
+	</p>
+
+	<h1>H1 là nhóm block</h1>
+	<h1>H1 là nhóm block</h1>
+	<h1>H1 là nhóm block</h1>
+
+	<a href="">Thẻ a số 1</a>
+	<a href="">Thẻ a số 2</a>
+	<a href="">Thẻ a số 3</a>
+
+	<span>Thẻ span1</span>
+	<span>Thẻ span2</span>
+	
+</body>
+</html>
