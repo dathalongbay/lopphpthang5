@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		#box1 {
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+
+			margin-bottom: 70px;
+
+			
+		}
+
+
+		#box2 {
+			width: 200px;
+			height: 200px;
+			border: 1px solid red;
+
+			margin-top: 30px; 
+
+			
+		}
+	</style>
+</head>
+<body>
+
+	<pre>
+		Quy tắc gộp của margin
+
+		Có 1 box1 có margin-bottom là 70px
+		box2 ở dưới box1 có margin-top là 30px
+
+		=> logic là lấy 70px + 30px = 100px
+
+		lấy margin có giá trị lớn hơn để làm kết quả 
+		2 box này cách nhau 70px
+		
+	</pre>
+
+	<div id="box1">box 1</div>
+	<div id="box1">box 2</div>
+	
+</body>
+</html>
