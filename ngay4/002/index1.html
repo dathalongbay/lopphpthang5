@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		#box1 {
+			width: 300px;
+			height: 300px;
+			border: 1px solid red;
+		}
+
+		#box2 {
+			width: 300px;
+			height: 300px;
+			border: 1px solid red;
+
+			padding: 30px;
+
+			padding-top: 30px;
+			padding-bottom: 30px;
+			padding-left: 30px;
+			padding-right: 30px;
+		}
+	</style>
+</head>
+<body>
+
+	<pre>
+		Thuộc tính padding
+
+		padding là 1 khoảng không gian xung quanh phần nội dung của 
+		1 thẻ html và nằm trong phần đường viền border
+
+		vậy khác margin chỗ nào
+		margin nằm ngoài thẻ html và nằm ngoài phần đường viền border
+		padding nằm trong phần border
+
+
+		=> content trong mô hình box model
+		có thể chỉ là 1 đoạn văn bản khi mà thẻ html chỉ chứa văn bản
+		nhưng content có thể là 1 khối html bên trong trong
+		khi thẻ html chả chứa thẻ html con nhưng thẻ cha không chứa văn bản
+	</pre>
+
+	<div id="box1">
+		Không sử dụng padding
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat distinctio quod quis cum nesciunt aliquid vitae similique quas a autem in optio assumenda quasi dolor atque facere omnis, sit vel.
+	</div>
+
+	<div id="box2">
+		Sử dụng padding 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto exercitationem eum odit, sunt quisquam vel unde cupiditate eos repudiandae voluptatem id, voluptates consequuntur atque sequi quas! Sequi, tempora earum.
+	</div>
+
+	<div id="parent" style="border: 1px solid orange; padding: 40px;width: 500px">
+
+		<div id="child" style="border: 1px solid green;padding: 20px">
+
+			thẻ con bên trong
+		</div>
+	</div>
+	
+</body>
+</html>
