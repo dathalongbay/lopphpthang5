@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #parent #demo {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        #id cha chứa #id con
+
+        =>
+        - div p {} chọn thẻ p nằm trong thẻ div
+        - .classA .classB {} chọn .classB nằm trong .classA
+        - #idA #idB {} chọn #idB nằm trong #idA
+        - .classA #idB {} #idB nằm trong .classA
+        - #idA .classB {} .classB nằm trong #idA
+        - div .classC {} .classC nằm trong div
+
+        => bộ chọn chứa bộ chọn
+        selector chứa selector
+        
+
+    </pre>
+
+    <div id="parent">
+        <div id="demo">#demo trong #parent</div>
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        section p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        Selector ( bộ chọn trong CSS ) mở rộng
+        - * là tất cả các thẻ html
+        - tagName ví dụ p {} div {} a {} chọn theo tên thẻ html
+        - .class chọn theo thuộc tính class
+        - #id chọn theo thuộc tính id
+    </pre>
+
+    <h1>Selector chứa selector </h1>
+    <pre>
+        selector cha chứa selector con
+        hay nói cách khác là selector con nằm trong selector cha
+
+        ví dụ :
+        style cho thẻ p nhưng phải nằm trong section
+        có màu đỏ
+    </pre>
+
+    <div>
+        <p>Thẻ p nằm trong thẻ div</p>
+    </div>
+
+    <section>
+        <p>Thẻ p nằm trong thẻ section</p>
+    </section>
+
+    <p>Thẻ p ở bên ngoài</p>
+
+</body>
+</html>
