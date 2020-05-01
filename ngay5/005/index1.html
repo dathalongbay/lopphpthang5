@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <style type="text/css">
+
+        /* khử đoạn css mặc định của trình duyệt gọi là reset css*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #target1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            padding: 20px;
+            position: static; /* static là tĩnh */
+        }
+    </style>
 </head>
 <body>
 
     <pre>
         Thuộc tính position trong CSS
+        position là vị trí trong css
+        - static ( giá trị mặc định ) có nghĩa là tĩnh
+        mặc định tất cả các html đều có
+        position: static;
 
+        - relative ( có nghĩa là tương đối )
+        - absolute ( có nghia là tuyệt đối )
+        - fixed ( có nghĩa là cố định )
+        - sticky ( trung gian của relative và fixed )
     </pre>
+
+
+    <div id="target1">
+        box relative
+    </div>
+
+
+
+
+
 </body>
 </html>

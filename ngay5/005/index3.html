@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        /* khử đoạn css mặc định của trình duyệt gọi là reset css*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #target1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            padding: 20px;
+            position: absolute;
+            top: 100px;
+            right: 0;
+
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        position: absolute; ( có nghĩa là tuyệt đối )
+        khi đặt thẻ html có position: absolute; mà bên ngoài
+        thẻ html đó không có thể cha hay có thẻ cha
+        nhưng thẻ cha có position khác relative
+        thì thẻ con có position: absolute; nó sẽ lấy
+        trình duyệt làm gốc tọa độ
+
+
+        - relative lấy vị trí ban đầu của nó làm gốc tọa độ
+        - absolute lấy vị trí của trình duyệt làm gốc tòa độ
+        nhưng absolute có 1 trường hợp ngoại lệ
+
+    </pre>
+
+
+    <div id="target1">
+        box absolute
+    </div>
+
+
+</body>
+</html>

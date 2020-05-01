@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        /* khử đoạn css mặc định của trình duyệt gọi là reset css*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        #target1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            padding: 20px;
+            position: relative;
+            top: -50px;
+            left: -100px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        Thuộc tính position trong CSS
+        position là vị trí trong css
+        - static ( giá trị mặc định ) có nghĩa là tĩnh
+        mặc định tất cả các html đều có
+        position: static;
+
+        - relative ( có nghĩa là tương đối )
+        - absolute ( có nghia là tuyệt đối )
+        - fixed ( có nghĩa là cố định )
+        - sticky ( trung gian của relative và fixed )
+
+        dùng 4 thuộc tính để đặt tọa độ
+        top : vị trí bên trên
+        left : vị trí bên trái
+        right : vị trí bên phải
+        bottom : vị trí bên dưới
+    </pre>
+
+    <pre>
+        kết luận :
+        khi đặt thẻ html có
+        position: relative;
+        thì thẻ html đó sẽ lấy vị trí ban đầu của nó
+        làm gốc tọa độ để dịch chuyển
+        nếu đặt top: 50px;
+        thì thẻ html đó dịch chuyển xuống dưới 50px so với vị trí ban đầu của thẻ
+        nếu đặt top: -50px;
+        thì thẻ html đó dịch chuyển lên trên 50px so với vị trí ban đầu
+        nếu đặt left: 100px; thì dịch chuyển sang phải 100px
+        nếu đặt left: -100px; thì dịch chuyển sang trái 100px
+    </pre>
+
+
+    <div id="target1">
+        box relative là vị trí ban đầu của relative
+    </div>
+
+
+
+
+
+</body>
+</html>
