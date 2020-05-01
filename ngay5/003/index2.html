@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .classA > .classB {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        .classA .classB => hiểu chọn tất cả các thẻ có classB nằm trong classA
+        hiểu classB là con , cháu , chắt ... của classA
+
+        .classA > .classB => hiểu chọn tất cả các thẻ html có classB nhưng
+        phải là con trực tiếp của classA
+        là con trực tiếp
+    </pre>
+
+    <div class="classA">
+        <div class="classB">con trực tiếp 1</div>
+        <div class="classB">con trực tiếp 2</div>
+        <div class="classB">con trực tiếp 3</div>
+
+        <div class="classC">
+            <div class="classB">cháu .classA</div>
+            <div class="classD">
+                <div class="classB">chắt .classA</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

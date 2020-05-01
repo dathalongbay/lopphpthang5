@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        .classA.classB {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        .classA .classB => hiểu .classB phải nằm trong .classA
+        .classA.classB => hiểu chọn các thẻ html có đồng thời cả classA và classB
+    </pre>
+
+    <div class="classA">
+        <div class="classB">.classA .classB</div>
+    </div>
+
+    <div class="classA classB">.classA.classB</div>
+
+</body>
+</html>
