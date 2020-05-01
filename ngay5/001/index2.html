@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        /* dùng class clearfix
+        ::after có nghĩa là thêm phía sau nhưng mà
+        trong thẻ html
+        */
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .parent {
+            border: 1px solid yellow;
+            padding: 20px;
+        }
+
+        #box1 {
+            width: 300px;
+            background-color: orange;
+            height: 200px;
+            float: left;
+        }
+
+        #box2 {
+            width: 300px;
+            background-color: green;
+            height: 200px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        1 vấn đề gặp phải khi sử dụng float
+        khi 1 thẻ html cha không có chiều cao cụ thể
+        tức là không dùng thuộc tính height
+
+        và thẻ html con bên trong thẻ cha sử dụng thuộc tính
+        float thì thẻ con sẽ bị trượt khỏi thẻ cha
+        hay nói cách khác là thẻ cha thẻ chứa thẻ con
+        float
+
+        => giải pháp
+        1 . đặt cho thẻ cha 1 chiều cao cụ thể
+        nhưng cách này có nhược điểm
+        2 . dùng kỹ thuật clearfix
+
+
+        ::before
+        ::after
+    </pre>
+
+    <div class="parent clearfix">
+        box cha
+        <div id="box1">Box1 con parent</div>
+        <div id="box2">Box2 con parent</div>
+    </div>
+
+</body>
+</html>

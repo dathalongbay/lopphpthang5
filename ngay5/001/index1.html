@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+
+        .parent {
+            border: 1px solid yellow;
+        }
+
+
+        #box1 {
+            background-color: orange;
+            width: 400px;
+            border: 1px solid red;
+            float: right;
+        }
+
+        #box2 {
+            background-color: green;
+            width: 200px;
+            border: 1px solid red;
+
+            clear: right;
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+    Khi mà sử dụng thuộc tính float thường đi kèm
+    với thuộc tính clear
+
+    * khi 1 box html float sang trái hay sang phải
+    thì có xu hướng ảnh hưởng thẻ bên cạnh của thẻ float
+
+
+    - sử dụng clear: right; chống việc bị 1 thẻ bên cạnh
+    đang float: right; ảnh hưởng
+    - sử dụng clear: left; chống việc bị 1 thẻ bên canh
+    đang float: left; ảnh hường
+    - sử dụng clear: both; chống việc bị 1 thẻ html bên cạnh
+    float sang trái hay sang phải
+</pre>
+
+<div class="parent">
+    <div id="box1">
+        Float right
+    </div>
+
+    <div id="box2">
+        Box 2 bị ảnh hưởng khi box1 float
+    </div>
+</div>
+
+</body>
+</html>
