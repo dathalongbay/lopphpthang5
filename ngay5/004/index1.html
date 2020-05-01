@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #target {
+            padding: 30px;
+            background-color: green;
+            color: white;
+        }
+
+        #target::before {
+            display: block;
+            width: 100%;
+            background-color: orange;
+            content: 'Nội dung được thêm bằng css before';
+        }
+
+        #target::after {
+            display: block;
+            width: 100%;
+            background-color: darkviolet;
+            content: 'Nội dung được thêm bằng css after';
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        thực hành code
+        ::before
+        ::after
+
+        Khi nào sử dụng before và after ?
+        dùng khi cần css phía trước hoặc phía sau
+        bên trong 1 thẻ html có thể thêm nội dung
+        hoặc không thêm nội dung
+    </pre>
+
+    <div id="target">
+        <!-- ::before-->
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci atque blanditiis, cum deleniti dolores eligendi fugit in magnam maxime minus modi molestias non numquam possimus provident quia quidem repellat veritatis.
+
+        <!-- :: after-->
+    </div>
+
+
+
+</body>
+</html>
