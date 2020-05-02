@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+        .container {
+            width: 800px;
+            border: 1px solid red;
+
+            /* căn giữa màn hình */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container .box1 {
+            width: 30%;
+            background-color: greenyellow;
+            float: left;
+            height: 200px;
+
+            box-sizing: border-box;
+            padding: 10%;
+        }
+
+        .container .box2 {
+            width: 70%;
+            background-color: orange;
+            float: right;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        Sử dụng đơn vị % cho thuộc tính width
+        và padding ở thẻ html con thì phụ thuộc
+        vào độ rộng của thẻ cha
+    </pre>
+
+    <div class="container clearfix">
+        <div class="box1">
+            Sidebar nội dung phụ
+        </div>
+
+        <div class="box2">
+            <h1>Nội dung chính</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam at autem consequuntur debitis delectus exercitationem maxime nemo praesentium veritatis voluptas! Exercitationem id iste iure laboriosam nisi similique suscipit ut voluptatum?</p>
+        </div>
+    </div>
+
+
+</body>
+</html>
