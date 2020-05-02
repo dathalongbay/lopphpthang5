@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box1 {
+            width: 150px;
+            height: 150px;
+            background-color: greenyellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            z-index: 3;
+        }
+
+        #box2 {
+            width: 150px;
+            height: 150px;
+            background-color: orange;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            z-index: 2;
+
+        }
+
+        #box3 {
+            width: 150px;
+            height: 150px;
+            background-color: red;
+
+            position: absolute;
+            top: 100px;
+            left: 100px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        thuộc tính z-index
+        thuộc tính chiều sâu 3 chiều
+        các lớp chồng lên nhau
+
+        thuộc tính z-index chỉ có tác dụng khi giá trị
+        của thuộc tính position là absolute , sticky
+        , relative , fixed
+
+        giá trị z-index càng cao thì càng nằm ở trên cùng
+    </pre>
+
+    <div id="box1">
+        box 1
+    </div>
+
+    <div id="box2">
+        box 2
+    </div>
+
+    <div id="box3">
+        box 3
+    </div>
+
+</body>
+</html>
