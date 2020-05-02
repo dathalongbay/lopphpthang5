@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .parent {
+            width: 800px;
+            margin: 0 auto;
+            border:1px solid red;
+            height: 500px;
+            background-color: greenyellow;
+
+            position: relative;
+        }
+
+        .parent .child {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        1 căn phòng có độ rộng 100 mét
+        và chiều dài 200 mét
+        có cái bàn chiều rộng bằng 2 met và chiều dài 2 mét
+        đặt cái bàn chính giữa căn phòng
+
+        => đặt bàn ở vị trí giữa căn phòng
+        vị trí X = 50 mét
+        và Y là 100 mét
+        nhưng bàn nó vẫn chưa thật sự ở giữa căn phòng
+        bởi vì cái bàn có kích thước 2*2
+
+        đủn cài bàn dịch chuyển lùi lại 1 nửa độ rộng của chính bản nó
+        và lùi lại 1 nửa chiều dài chủa chính nó
+        lùi bàn lại 1 mét chiều rộng và 1 mét chiều dài
+        => bàn giữa căn phòng
+
+
+    </pre>
+
+    <div class="parent">
+        <div class="child">
+            THẻ con
+        </div>
+    </div>
+
+</body>
+</html>
