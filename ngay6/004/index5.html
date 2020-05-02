@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #parent {
+            font-size: 30px;
+        }
+
+        #child {
+            font-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <pre>
+        quy tắc của font-size theo % cũng
+        tương tự như font-size của em
+        đều tìm lên thẻ tổ tiên font-size của thẻ con
+        để quy đổi
+        nếu ko có thì 100% = 16px theo mặc định
+    </pre>
+
+    <div id="parent">
+        <div id="child">Nội dung văn bản</div>
+    </div>
+
+</body>
+</html>

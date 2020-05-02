@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        #demo1 {
+            font-size: 30px;
+        }
+
+        #demo2 {
+
+        }
+
+        #demo3 {
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        Khi 1 thẻ html được đặt font-size là
+        em thì thẻ đó
+        sẽ tìm lên thẻ cha
+        nếu thẻ cha có font-size cự thể
+        thì 1 em = font-size của thẻ cha
+        nếu thẻ  cha ko có font-size cụ thể
+        thì sẽ tìm tiếp lên các thẻ ông nội , cụ nội ...
+        nếu thẻ ông nội có font-size cụ thể
+        thì 1 em = font-size của thẻ ông nội
+
+        nếu các thẻ tổ tiên ko có font-size cụ thể
+        thì 1 em = 16px theo mặc định
+    </pre>
+
+    <div id="demo1">
+
+        <div id="demo2">
+            <div id="demo3">
+                Nội dung văn bản
+            </div>
+        </div>
+    </div>
+</body>
+</html>
