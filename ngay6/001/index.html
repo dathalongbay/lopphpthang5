@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #box1 {
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+
+        #box2 {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            padding: 30px;
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        Thuộc tính box-sizing
+        Khi thêm thuộc tính padding
+        vào 1 thẻ html có width cụ thể
+        và height cụ thể thì sẽ làm thay đổi
+        kích cỡ chiều rộng và chiều cao của thẻ html
+        => ví dụ box1 có width là 200
+        và height là 200
+        thêm padding:20px;
+        chiều rộng là 240px
+        chiều cao là 240px
+
+        Không muốn thuộc tính padding hay border ảnh hưởng độ rộng
+        cũng như độ cao ban đầu của thẻ do chúng ta đặt
+
+        => giải pháp sử dụng box-sizing
+
+        Kết luận : sử dụng thuộc tính
+        box-sizing: border-box;
+        khi chúng ta cần bảo toàn chiều rộng của width
+        và height mà chúng ta đã đặt ban đầu
+    </pre>
+
+    <div id="box1">
+        Box 1
+    </div>
+
+    <div id="box2">
+        Box 2
+    </div>
+
+</body>
+</html>
